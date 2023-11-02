@@ -1,0 +1,102 @@
+body{
+     /* background-image: linear-gradient(to bottom right, rgb(12, 12, 12),rgb(143, 140, 140)); */
+     background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(259, 255, 255, 0.1)), url(../back4.jpg);
+     width: 100%;
+     color: rgb(0 0 0);
+     min-height: 100vh;
+     display: flex;
+     background-size: cover;
+     flex-direction: column;
+     opacity: 02;
+     font-weight: BOLDER;
+     font-size:larger;
+     background-position: center;
+
+}
+
+.main-heading{
+    font-family: "Roboto",sans-serif;
+    font-size: xxx-large;
+    width: 100%;
+    height: 80px;
+    /* background-image: url(../back4.jpg); */
+    /* background-image: linear-gradient(to bottom right, rgb(143, 140, 140),rgb(12, 12, 12)); */
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    box-shadow: 0 16px 62px 0px black inset;
+    text-align: center;
+    display: inline-flex;
+    color: rgba(118, 41, 23, 0.853);;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+th{
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    font-family: cursive;
+}
+tr{
+    text-align: center;
+}
+td{
+    padding-bottom: 1rem;
+}
+footer{
+    margin-top: auto;
+}
+
+.footer-elements-container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-heading{
+    width: 150px;
+    height: 80px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5)), url(../back4.jpg);
+    background-repeat: no-repeat;
+    font-weight: bolder;
+    /* box-shadow: 0 16px 62px 0px black inset; */
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: rgb(11, 11, 11);
+}
+
+a{
+    color: rgb(5, 5, 5);
+    text-decoration: none;
+}
+
+a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.blog-fields-button{
+    margin-left: 2rem;
+    display: inline-flex;
+    width: 100%;
+    justify-content:left;
+ }
+ .blog-post{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background-color: rgba(118, 41, 23, 0.853);
+    color: rgb(3, 3, 3);
+    font-family: cursive;
+    font-size: large;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+ }
+
+ .blog-post:hover{
+    cursor: pointer;
+}

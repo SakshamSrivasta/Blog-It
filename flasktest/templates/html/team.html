@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/team.css') }}" />
+        <title>All Posts</title>
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    </head>
+<body>
+    <h1 class="main-heading">Team</h1>
+    <div class="image-container-main">
+        <div class="first-partition-image">
+            <img class="imageface" src="{{ url_for('static', filename='Saksham.jpg') }}">
+            <h3> Saksham Srivastava</h3>
+            <p class="member-description">Saksham is a B.Tech undergraduate from SRM University, Chennai. His technical skills include Python, C, HTML, CSS, JS and Flask.
+                <br>Being one of the core member of the team, he aims to take this website to new heights with new improvements each day.
+                The improvements, however, are not limited to just the website. Saksham aims to work his way towards becoming a full stack developer
+                by continuous learning.
+            </p>
+        </div>
+        <div class="second-partition-image">
+            <img class="imageface" src="{{ url_for('static', filename='Tusya.jpg') }}">
+            <h3>Tusya Marsonia</h3>
+            <p class="member-description">Tusya is a B.Tech undergraduate from SRM University, Chennai. His technical skills include Python, C and HTML.
+                He with a hobby of reading aims spread knowledge through various means. He also has interest in coding aims to improve his work by developing the site and make it accessible for everyone. 
+                He aims to become a software developer by continuous learning and practise.
+            </p>
+        </div>
+   </div>
+
+    <footer>
+        <hr style="width: 95%;"/>
+        <div class="footer-elements-container">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="mailto:srisaksham3@gmail.com,tusyamarsonia@gmail.com">Contact Us</a>
+            <a href="/team">Team</a>
+            <h3 class="footer-heading">Blog-It</h3>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

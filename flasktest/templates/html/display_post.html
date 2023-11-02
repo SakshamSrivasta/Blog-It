@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/posts.css') }}" />
+        <title>All Posts</title>
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    </head>
+<body>
+    <h1 class="main-heading">Blog-It</h1>
+    <div class="blog-fields-button">
+        <button class="blog-post" onclick="new_post()">New Post</button>
+    </div>
+    {% if posts %}
+        <table>
+            <thead>
+                <tr>
+                <th>S.No.</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>posted_on</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for post in posts %}
+                <tr>
+                    <td>{{loop.index}}</td>
+                    <td><a href="/readblog?query={{ post.title }}">{{post.title}}</a></td>
+                    <td>{{post.author}}</td>
+                    <td>{{post.posted_on.strftime("%d-%m-%Y") }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h2 style="text-align: center;font-family: cursive;">No posts available yet. Stay Tuned!</h2>
+    {% endif %}
+    <footer>
+        <hr style="width: 95%;"/>
+        <div class="footer-elements-container">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="mailto:srisaksham3@gmail.com,tusyamarsonia@gmail.com">Contact Us</a>
+            <a href="/team">Team</a>
+            <h3 class="footer-heading">Blog-It</h3>
+        </div>
+    </footer>
+
+   
+</body>
+</html>

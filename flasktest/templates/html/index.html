@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+        <title>Post</title>
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    </head>
+<body>
+    <h1 class="main-heading">Blog-It</h1>
+    <div class="read-blog-button">
+        <button class="read-blog" onclick="read_posts()">Start Reading</button>
+    </div>
+    <form id="blogForm" action="/posts/new" method="POST">
+        <div class="blog-fields">
+            <label for="input" class="blog-label">Title</label>
+            <input class="blog-input" name="input" type="text" id="title-input" placeholder="Title goes here">
+            <p style="color: red;display: none;width: 51%;" class="error-message-title">This field cannot be blank</p>
+        </div>
+
+        <div class="blog-fields">
+            <label class="blog-label">Category</label>
+            <select id="category" class="blog-input" style="width: 51%;"> 
+                <option value="select">Select a Category</option> 
+                <option value="food">Food</option> 
+                <option value="travel">Travel</option> 
+                <option value="technology">Tech</option> 
+                <option value="Fashion">Fashion</option> 
+                <option value="Sports">Sports</option> 
+                <option value="politics">Politics</option> 
+                <option value="Reasearch">Reasearch</option> 
+            </select>
+            <p style="color: red;display: none;width: 51%;" class="error-message-category">This field cannot be blank</p>
+        </div>
+
+        <div class="blog-fields">
+            <label for="content" class="blog-label">Content</label>
+            <textarea name="content" id="content" class="blog-input-content" placeholder="Content goes here"></textarea>
+            <p style="color: red;display: none;width: 51%;" class="error-message-content">Content should contain atleast 50 characters</p>
+        </div>
+
+        <div class="blog-fields">
+            <label for="author" class="blog-label">Author Name</label>
+            <input name="author" id="author" class="blog-input" type="text" placeholder="Name of the author">
+            <p style="color: red;display: none;width: 51%;" class="error-message-author">This field cannot be blank</p>
+        </div>
+
+        <div class="blog-fields-button">
+            <input onclick="return displaypage()" type="submit" class="blog-post" value="POST">
+        </div>
+    </form>
+    <footer>
+        <hr style="width: 95%; color: black;"/>
+        <div class="footer-elements-container">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="mailto:srisaksham3@gmail.com,tusyamarsonia@gmail.com">Contact Us</a>
+            <a href="/team">Team</a>
+            <h3 class="footer-heading">Blog-It</h3>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

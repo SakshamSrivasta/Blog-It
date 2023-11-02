@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/content.css') }}" />
+        <title>All Posts</title>
+        <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    </head>
+<body>
+    <h1 class="main-heading">Blog-It</h1>
+    <h2 class="title-blog">{{ details.title }}</h2>
+    <p class="content-blog">{{ details.content }}</p>
+
+    <footer>
+        <hr style="width: 95%;"/>
+        <div class="footer-elements-container">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="mailto:srisaksham3@gmail.com,tusyamarsonia@gmail.com">Contact Us</a>
+            <a href="/team">Team</a>
+            <h3 class="footer-heading">Blog-It</h3>
+        </div>
+    </footer>
+
+   
+</body>
+</html>
